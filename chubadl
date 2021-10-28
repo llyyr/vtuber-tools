@@ -1,0 +1,3 @@
+#!/bin/bash
+filename=$(date +'%Y%m%d')
+streamlink --retry-streams 10 -r "${filename}.mp4" $1 $2
